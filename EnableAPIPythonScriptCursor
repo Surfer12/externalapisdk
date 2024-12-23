@@ -56,4 +56,13 @@ check_api_status(api): This function checks the status of a given API. It uses s
 
 The script defines two lists: apis_to_enable and apis_to_check. It first calls enable_proposed_apis with the apis_to_enable list, attempting to enable those APIs. Then, it iterates through the apis_to_check list, calling check_api_status for each API and printing the returned status to the console.
 
-Several of the APIs mentioned relate to development tools and services: GitHub, Docker, YAML, Gradle, Cloud Code, Copilot, Gemini Code Assist, and more. This suggests the script might be used for configuring a development environment within Cursor. """
+Several of the APIs mentioned relate to development tools and services: GitHub, Docker, YAML, Gradle, Cloud Code, Copilot, Gemini Code Assist, and more. This suggests the script might be used for configuring a development environment within Cursor.
+
+Open Cursor’s integrated terminal.
+• In Cursor, look for “Terminal” or find an option to open a terminal or console.
+• Alternatively, you can use a keyboard shortcut depending on your platform (e.g., Ctrl+ or Cmd+).
+Once you have the integrated terminal open, run your Python script with:
+python enable_proposed_apis.py
+This will execute the script in the Cursor environment, calling the “cursor” CLI commands and printing the results in the terminal.
+If you see zsh messages like “zsh: no matches found” or “bad math expression,” try enclosing arguments in quotes or disabling zsh globbing, but typically just running python enable_proposed_apis.py in Cursor’s terminal should work. Make sure you have the “cursor” CLI installed and available in your environment path.
+That’s it! Your script should now run in Cursor’s integrated terminal, enabling the specified proposed APIs and then checking their statuses. """
